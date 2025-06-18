@@ -74,3 +74,10 @@ The LLM is instructed to evaluate the user's answer for correctness only based o
 
 How to RUN
 streamlit run doc_sum.py
+MAKE A .ENV FILE 
+with GOOGLE_API_KEY=YOUR API KEY
+
+LANGSMITH_TRACING=true
+LANGSMITH_ENDPOINT=https://api.smith.langchain.com
+LANGSMITH_API_KEY='YOUR API KEY FROM LANGSMITH
+LANGSMITH_PROJECT=PROJECT NAME 
