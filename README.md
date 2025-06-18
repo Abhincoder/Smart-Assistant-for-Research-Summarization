@@ -69,15 +69,13 @@ The original question is used to retrieve relevant chunks from the Chroma vector
 An evaluation_prompt is crafted, supplying the original question, the User's Answer, and the Document Context (retrieved chunks) to the LLM. [cite: uploaded:doc_sum.py]
 The LLM is instructed to evaluate the user's answer for correctness only based on the provided context, providing feedback and justification. [cite: uploaded:doc_sum.py]
 
-
-
-
-How to RUN
-streamlit run doc_sum.py
-MAKE A .ENV FILE 
-with GOOGLE_API_KEY=YOUR API KEY
-
+REQUIREMENTS BELOW
+MAKE A .ENV FILE IN THE SAME FOLDER AS THE doc_sum.py
+with [GOOGLE_API_KEY=YOUR API KEY
 LANGSMITH_TRACING=true
 LANGSMITH_ENDPOINT=https://api.smith.langchain.com
 LANGSMITH_API_KEY='YOUR API KEY FROM LANGSMITH
-LANGSMITH_PROJECT=PROJECT NAME 
+LANGSMITH_PROJECT=PROJECT NAME ]
+
+How to RUN
+streamlit run doc_sum.py
